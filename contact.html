@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>I'm flattered !</title>
+
+<link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="userprf">
+			<a href="prfselect.html">User Profile</a>
+		</div>
+
+		<div class="header">
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="growth.html">Growth</a>
+				<a href="personality.html">Personality</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+
+
+	<div class="container" id="container">
+		
+		<h1>Connect With Me</h1>
+		<p>If you've finished reviewing my porfolio I would appreciate any feedback (good or bad) you have to offer. <br> Feel free to reach out on the most accommodating platform.</p>
+		
+		<div class="container-box">
+
+			<div class="contact-left">
+				<h3>Send your feedback</h3>
+				<form action="https://api.web3forms.com/submit" method="POST">
+
+					<input type="hidden" name="access_key" value="02009e55-b530-4293-a91f-55752dc87d9c">
+					
+					<div class="input-row">
+						
+						<div class="input-group">
+						
+							<label>Name</label>
+							<input type="text" name="full_name" placeholder="Jane Doe" required>
+
+						</div>
+
+
+
+						<div class="input-group">
+						
+							<label>Phone</label>
+							<input type="text" name="phone_number" placeholder="+1 888 888 8888">
+
+						</div>
+					</div>
+
+
+
+					<div class="input-row">
+
+						<div class="input-group">
+						
+							<label>Email</label>
+							<input type="text" name="email" placeholder="janedoe@email.com" required>
+
+						</div>
+
+
+						<div class="input-group">
+
+							<label>Message</label>
+							<textarea rows="10" name="msg" placeholder="Hi Heaven, I just wanted to tell you that my only feedback is that I have no feedback! You're just so very amazing!!" required></textarea>
+						
+							<button type="Submit">Submit</button>
+							
+						</div>
+
+					</div>
+
+				</form>
+			</div>
+
+
+
+
+			<div class="contact-right">
+				<h3>Places to chat</h3>
+			
+
+				<table>
+					
+					<tr>
+						<td>Github</td>
+						<td><a href="https://github.com/giraffewstripez">giraffewstripez</a></td>
+					</tr>
+					<tr>
+						<td>LinkedIn</td>
+						<td><a href="https://www.linkedin.com/in/heaven-nesbitt-331a28254/">Heaven Nesbitt</a></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td>Included in resume</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td>hfnesbitt@gmail.com</td>
+					</tr>
+
+				</table>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+<!--Responsive Navigation-->	
+
+
+	<img onclick="openNav()" id="navsym" class="navsym" src="css/images/navsym.png">
+
+	<img onclick="closeNav()" id="arrowsym" class="arrowsym" src="css/images/arrowsym.png">
+
+
+	<script>
+
+		var greeting = document.getElementById("greeting");
+		var nav = document.getElementById("nav");
+		var container = document.getElementById("container");
+
+
+		function openNav(){
+			nav.style.visibility = "visible";
+			navsym.style.visibility = "hidden";
+			arrowsym.style.visibility = "visible";
+			container.style.margin = "120% 0% 0% 10%";
+		}
+		function closeNav(){
+			arrowsym.style.visibility = "hidden";
+			nav.style.visibility = "hidden";
+			navsym.style.visibility = "visible";
+			container.style.margin = "40% 0% 0% 10%";
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

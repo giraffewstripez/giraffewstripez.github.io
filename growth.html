@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dreams Of The Future</title>
+<link rel="stylesheet" type="text/css" href="css/growth.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+<script defer src="java/growth.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+	<div class="userprf">
+			<a href="prfselect.html">User Profile</a>
+		</div>
+
+		<div class="header">
+			<nav id="nav">
+				<a href="index.html">Home</a>
+				<a href="resume.html">Resume</a>
+				<a href="growth.html">Growth</a>
+				<a href="personality.html">Personality</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+
+	<main>
+		
+		<section class="container" id="container">
+			<div class="slider-wrapper">
+				<div class="slider">
+					
+					<img id="slide-1" src="css/images/project1.png"
+					alt="A screenshot from the completed homepage of my first web design project">
+
+					<img id="slide-2" src="css/images/project2.png" alt="A screenshot from the completed homepage of my first web design project">
+
+					<img id="slide-3" src="css/images/project3.png" alt="A screenshot from the completed homepage of my first web design project">
+
+				</div>
+
+				<div class="slider-nav">
+
+					<a href="#slide-1"></a>
+					<a href="#slide-2"></a>
+					<a href="#slide-3"></a>
+
+				</div>
+
+			</div>
+		</section>
+
+
+<!--  Closing button for images  -->
+
+
+	<div class="full-img" id="fullimgBox">
+		<img src="stylesheets/images/img1.jpg" id="fullimg">
+		<span onclick="closeFullimg()">X</span>
+	</div>
+
+
+
+<!--  Tier 1  -->
+
+
+
+		<section class="hidden">
+			<div class="t1lvl1">
+				<img class="tier1img1" src="css/images/mock1/sitemap.png" onclick="openFullimg(this.src)">
+			</div>
+
+			<div class="t1lvl2">
+				<img class="tier1img2" src="css/images/mock1/gallery.png" onclick="openFullimg(this.src)">
+
+				<p class="tier1p">
+				Living Environment was my first ever complete webpage development project. It was a group assignment to create a faux non-profit org for a web design course. Out of six members I was voted group leader, and made responsible for the landing and gallery pages. 
+				My favorite feature at the time was the hover effect that I had newly learned how to assign for buttons and links. As I was assigned the gallery page, I had learned how to make photos enlarge when clicked. which was also really exciting to a first project.
+				As group leader I was also responsible for making all the pages responsive. That was really challenging as this was my first project and I had little experience and I do wish I had made the navigation hidden and accessible with js. I also would have liked to make my font more accessible in all display sizes. 
+				</p>
+
+			</div >
+
+			<div class="t1lvl3">
+				<img class="tier1img3" src="css/images/mock1/responsive.png" onclick="openFullimg(this.src)">
+			</div>
+
+
+		</section>
+
+
+
+
+
+
+
+<!--  Tier 2  -->
+
+
+
+
+		<section class="hidden">
+			<div class="t2lvl1">
+				<img class="tier2img1" src="css/images/mock2/sitemap.png" onclick="openFullimg(this.src)">
+			</div>
+
+			<div class="t2lvl2">
+				<img class="tier2img2" src="css/images/mock2/locations.png" onclick="openFullimg(this.src)">
+
+				<p class="tier2p">
+					This was my first personal project. It was recommended by a friend, who provided me a prompt(request) to make them a basic mock real estate 
+					Although the outcome of this project appears extremely simple, the highlights were my ability to develop a webpage off of a defined prompt. My friend provided me with the request, I created a wireframe and sitemap and then developed the pages based on their approval.
+					In hindsight the only thing that could have made this project better was if I had understood more css and js concepts to make the site more interactive. 
+				</p>
+			</div>
+
+			<div class="t2lvl3">
+				<img class="tier2img3" src="css/images/mock2/sitemap2.png" onclick="openFullimg(this.src)">
+			</div>
+			
+		</section>
+
+
+
+
+
+<!--  Tier 3  -->
+
+
+		<section class="hidden">
+			<div class="t3lvl1">
+				<img class="tier3img1" src="css/images/mock3/sitemap.png" onclick="openFullimg(this.src)">
+			</div>
+
+			<div class="t3lvl2">
+				<img class="tier3img2" src="css/images/mock3/responsive.jpeg" onclick="openFullimg(this.src)">
+
+				<p class="tier3p">
+					This is not my first attempt at creating a digital portfolio. In total I have 3 previous draft websites that are all distinctly different. However this portfolio has to be the most personalized and advanced version produced thusfar.
+					My favorite features in this website is the animations, particularly the text animations. I’m still learning new ways to incorporate js elements into my pages to make them more interactive and the typewriter text provided a very engaging example.  I am also really proud of working contact form and responsive navigation. 
+					If I had to improve anything (which I am), would be figuring out the backend qualities of my registration/login form. As well as making the displays more distinct in their responsive forms.
+				</p>
+			</div>
+
+			<div class="t3lvl3">
+				<img class="tier3img3" src="css/images/mock3/page.png" onclick="openFullimg(this.src)">
+			</div>
+			
+		</section>
+
+
+
+
+	</main>
+
+
+
+<!--Responsive Navigation-->	
+
+
+	<img onclick="openNav()" id="navsym" class="navsym" src="css/images/navsym.png">
+
+	<img onclick="closeNav()" id="arrowsym" class="arrowsym" src="css/images/arrowsym.png">
+
+
+	<script>
+
+		var nav = document.getElementById("nav");
+		var container = document.getElementById("container");
+
+		function openNav(){
+			nav.style.visibility = "visible";
+			navsym.style.visibility = "hidden";
+			arrowsym.style.visibility = "visible";
+			container.style.visibility = "hidden";
+		}
+		function closeNav(){
+			arrowsym.style.visibility = "hidden";
+			nav.style.visibility = "hidden";
+			navsym.style.visibility = "visible";
+			container.style.visibility = "visible";
+		}
+
+	</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
