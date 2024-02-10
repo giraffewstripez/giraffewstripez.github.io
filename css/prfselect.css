@@ -1,266 +1,94 @@
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
-	font-family:'Comfortaa', sans-serif;
-	background: transparent;
-}
-body{
-	background-color: #E8E2DB;
+	font-family: "Comfortaa", sans-serif;
+	background-color: #F47D84;
 }
 
-
-.bg-image{
-	height: 50%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.userprf{
+	padding-top: 15px;
+	text-align: right;
+	margin-right: 20px;
 }
-
-
-.img1 { background-image: url("images/custombg1.png"); }
+.userprf a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.userprf a:hover{
+	color: #4C2424;
+	text-shadow: #CF232D 1px 0 10px;
+}
 
 .header{
 	margin-top: 10px;
 	padding-top: 10px;
 	width: 100%;
-	max-height: 100vh;
-	height: 80%;
+	height: 100vh;
+	background-color: #E8E2DB;
+	overflow: hidden;
 }
 nav{
 	width: 100%;
 	padding: 23px;
 	text-align: center;
-	background-color: white;
 }
 nav a{
 	text-decoration: none;
 	text-justify: auto;
 	margin: 20px 30px;
-	color: #F47D84;
+	color: #fff;
 	font-weight: bolder;
-	background-color: white;
+	background-color: transparent;
 	font-size: 23px;
 }
 nav a:hover{
 	text-decoration: underline #CF232D 6px;
 	text-underline-offset: 6px;
-	color: #00008B;
-	font-size: 18px;
+	color: #4C2424;
+	font-size: 22px;
 	text-shadow: 2px 2px 8px #CF232D;
 }
 
 
 
-
-
-
-
-
-
-/*Card Displays*/
-
-
-
-.container{
+.mypdf{
+	align-content: center;
+	margin-top: -46%;
 	width: 100%;
-	height: 100vh;
-	font-family: sans-serif;
-	background: rbg(245,201,203);
-	color: #CF232D;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 0%;
-	z-index: -1;
-
-}
-.card{
-	width: 550px;
-	height: 520px;
-	box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
-	perspective: 1000px;
-}
-
-.inner-box{
-	position: relative;
-	width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-	transition: transform 1s;
-}
-.card-front{
-	background-image: linear-gradient(rgba(255, 209, 233, 0.8), rgba(255, 209, 233, 0.8)),url(images/futurama.jpeg);
-
-}
-
-.card-front, .card-back{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	
-	padding: 55px;	
-	box-sizing: border-box;
-	backface-visibility: hidden;
-	box-shadow: 60px -16px #CF232D;
-}
-.card-back{
-	transform: rotateY(180deg);
-	background-image: linear-gradient(rgba(255, 209, 233, 0.8), rgba(255, 209, 233, 0.8)),url(images/whoru.png)
-}
-.card h2{
-	font-weight: normal;
-	font-size: 24px;
-	text-align: center;
-	margin-bottom: 20px;
-	background: transparent;
-
-}
-.input-box{
-	width: 100%;
-	background: transparent;
-	border: 1px solid #CF232D;
-	margin: 6px 0;
-	height: 32px;
-	border-radius: 20px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	outline: none;
-	text-align: center;
-	color: #fff;
-}
-
-::placeholder{
-	color: #CF232D;
-	font-size: 12px;
-}
-button{
-	width: 100%;
-	background: #F47D84;
-	border: 1px solid #fff;
-	margin: 35px 0 10px;
-	height: 32px;
-	font-size: 12px;
-	border-radius: 20px;
-	padding: 0 10px;
-	box-sizing: border-box;
-	outline: none;
-	color: #fff;
-	cursor: pointer;
-	box-shadow: 4px 4px 2px #CF232D;
-}
-.submit-btn{
-	position: relative;
-	background: transparent;
-	color: #CF232D;
-}
-.submit-btn:hover{
-	color: #fff;
-	font-weight: bolder;
-	background: #CF232D;
-}
-.submit-btn::after{
-	content: '\27a4';
-	color: #CF232D;
-	line-height: 32px;
-	font-size: 17px;
-	height: 32px;
-	width: 32px;
-	border-radius: 50%;
-	background: #fff;
-	position: absolute;
-	right: -1px;
-	top: -1px;
-}
-span{
-	font-size: 13px;
-	margin-left: 10px;
-}
-.card .btn{
-	margin-top: 30px;
-}
-
-.card .btn:hover{
-	background-color: #CF232D;
-	color: #fff;
-	font-weight: bolder;
-}
-
-.card a{
-	color: #4C2424;
-	text-decoration: none;
-	display: block;
-	text-align: center;
-	font-size: 13px;
-	margin-top: 10px;
+	height: 150vh;
+	margin-bottom: 10%;
 }
 
 
 
-
-
-
-
-
-/*Popup Display*/
-
-
-
-.popup{
-	display: block;
-	margin-top: -50%;
-	max-width: 90%;
-	width: 60%;
-	max-height: 80%;
-	height: 40%;
-	margin-left: 10%;
-	background-color: #fff;
-	border: 8px solid #CF232D;
-	z-index: 2;
-	position: absolute;
-	visibility: visible;
-	transform: scale(1.0);
-	
+.resclick{
+	hidden
 }
-.open-popup{
-	margin-top: 0%;
-	transform: scale(0.5);
+
+
+
+/*Scroll Bar*/
+
+::-webkit-scrollbar{
+	width: 12px;
+}
+::-webkit-scrollbar-track{
+	background: #EBBABD;
+}
+::-webkit-scrollbar-thumb{
+	background: white;
+	border-radius: 10px;
+	opacity: 80%;
+}
+
+.navsym{
 	visibility: hidden;
 }
-
- .popup-container{
- 	padding: 10%;
- }
-
- .popup-container img{
- 	border-radius: 20%;
- 	margin-left: 43%;
- 	border: none;
- 	width: 15%;
- 	height: 35%;
- 	margin-top: 5%;
-
- }
- .popup-container h1{
- 	color: #CF232D;
- }
- .popup-btn{
- 	width: 40%;
- 	margin-bottom: -50%;
- 	margin-top: 3%;
- 	margin-left: 30%;
- }
- .popup-btn:hover{
- 	color: #fff;
- 	background-color: #CF232D;
- }
-
-
-
-
-
+.arrowsym{
+	visibility: hidden;
+}
 
 
 
@@ -271,46 +99,63 @@ span{
 
 @media screen and (max-width: 900px){
 
-
-
-/*Main Content*/
-
-	.container{
+	nav a{
+		font-size: 15px;
+	}
+	.mypdf{
+		display: none;
+	}
+	.resclick{
+		position: absolute;
+		max-width: 900px;
+		width: 60%;
+		margin-top: -145%;
+		margin-left: 19%;
+		background-color: transparent;
+	}
+	nav{
+		margin: 0;
+		visibility: hidden;
 		max-width: 100%;
+		position: relative;
+		margin-top: 10%;
 	}
-	.card-front, .card-back{
-		height: 100vh;
-		background-color: #F47D84;
-		background-image: none;
-		margin-top: -30%;
-	}
-	.card h2{
-		color: #fff;
-	}
-	::placeholder{
-		color: #fff;
-	}
-
-
-/*Popup Display*/
-
-
-	.popup{
-		margin-top: -160%;
-		width: 80%;
+	nav a{
+		padding-top: 3%;
+		padding-bottom: 3%;
+		padding-right: 35%;
 		margin-left: 2%;
+		display: flow;
+		padding-left: 70%;
+		border: solid black 1px;
 	}
-	.popup-container img{
-		height: 30%;
-		width: 40%;
-		margin-left: 27%;
-	}
-	.popup p{
-		font-size: 20px;
-	}
-	.popup h1{
-		text-align: center;
+	nav a:hover{
+		font-size: 12px;
 	}
 
+
+	.navsym{
+		visibility: visible;
+		position: absolute;
+		margin-top: -218%;
+		margin-left: 70%;
+		background-color: transparent;
+	}
+	.navsym:hover{
+		background-color: rgba(237, 132, 172, 0.2);
+	}
+
+	.arrowsym{
+		visibility: hidden;
+		background-color: transparent;
+		width: 100px;
+		height: 15vh;
+		margin-top: -230%;
+		position: absolute;
+		margin-left: 70%;
+	}
+	.arrowsym:hover{
+		background-color: rgba(237, 132, 172, 0.2);
+	}
 
 }
