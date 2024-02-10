@@ -149,21 +149,3 @@ const typeEffect4 = () => {
 }
 
 typeEffect4();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
