@@ -93,7 +93,7 @@ h1 span::before {
 	height: 50px;
 	width: 5px;
 	background: #E8E2DB;
-	transform: translateY(-45%);
+	transform: translateY(-45);
 	animation: blink 0.7s infinite;
 }
 h1 span.stop-blinking::before{
