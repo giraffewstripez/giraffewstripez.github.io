@@ -93,7 +93,7 @@ h1 span::before {
 	height: 50px;
 	width: 5px;
 	background: #E8E2DB;
-	transform: translateY(-45);
+	transform: translateY(-45%);
 	animation: blink 0.7s infinite;
 }
 h1 span.stop-blinking::before{
@@ -320,7 +320,7 @@ h5{
 	margin-top: -8%;
 	font-size: 30px;
 	margin-left: 70%;
-	margin-bottom: 5%;
+	margin-bottom: -60%;
 	color: #E8E2DB;
 	text-shadow: 5px 5px #CF232D;
 	font-weight: bolder;
