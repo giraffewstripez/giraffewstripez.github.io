@@ -88,7 +88,7 @@ nav a:hover{
 .slider img{
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	object-fit: fill;
+	object-fit: contain;
 }
 .slider-nav{
 	display: flex;
@@ -187,12 +187,6 @@ nav a:hover{
 
 
 
-
-
-
-
-
-
 /*  Tier 1  */
 
 
@@ -202,7 +196,7 @@ nav a:hover{
 }
 .tier1img1, .tier1img2, .tier1img3{
 	width: auto;
-	height: 90%;
+	height: 20vh;
 	max-width: 18%;
 	max-height: 110vh;
 	border: solid #CF232D 5px;
