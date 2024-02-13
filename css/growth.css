@@ -89,6 +89,8 @@ nav a:hover{
 	flex: 1 0 100%;
 	scroll-snap-align: start;
 	object-fit: cover;
+	height: 60vh;
+	width: 1000px;
 }
 .slider-nav{
 	display: flex;
