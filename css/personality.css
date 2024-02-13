@@ -101,7 +101,7 @@ h1 span.stop-blinking::before{
 }
 
 @keyframes blink{
-	50% {
+	50%{
 		opacity: 0;
 	}
 }
@@ -146,7 +146,7 @@ h2 span{
 }
 
 
-h2 span::before {
+h2 span::before{
 	content: "";
 	right: -8px;
 	margin-top: -3%;
@@ -225,7 +225,7 @@ h3 span{
 	position: relative;
 	background-color: transparent;
 }
-h3 span::before {
+h3 span::before{
 	content: "";
 	right: -8px;
 	margin-top: -3%;
@@ -279,7 +279,7 @@ h4 span{
 	position: relative;
 	background-color: transparent;
 }
-h4 span::before {
+h4 span::before{
 	content: "";
 	right: -8px;
 	margin-top: -3%;
