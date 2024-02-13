@@ -88,7 +88,7 @@ h1 span{
 h1 span::before {
 	content: "";
 	right: -8px;
-	top: 50;
+	top: 55;
 	position: absolute;
 	height: 50px;
 	width: 5px;
@@ -150,7 +150,7 @@ h2 span::before{
 	content: "";
 	right: -8px;
 	margin-top: -3%;
-	top: 4%;
+	top: 5;
 	background: #CF232D;
 	position: absolute;
 	height: 36px;
@@ -229,7 +229,7 @@ h3 span::before{
 	content: "";
 	right: -8px;
 	margin-top: -3%;
-	top: 4%;
+	top: 10;
 	background: #CF232D;
 	position: absolute;
 	height: 36px;
