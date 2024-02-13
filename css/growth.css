@@ -88,7 +88,7 @@ nav a:hover{
 .slider img{
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	object-fit: ;
+	object-fit: fill;
 	height: 60vh;
 	width: 500px;
 }
