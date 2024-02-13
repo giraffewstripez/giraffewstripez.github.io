@@ -195,10 +195,10 @@ nav a:hover{
 
 }
 .tier1img1, .tier1img2, .tier1img3{
+	max-height: 20vh;
 	width: auto;
 	height: 20vh;
 	max-width: 18%;
-	max-height: 110vh;
 	border: solid #CF232D 5px;
 }
 .tier1img1{
@@ -241,10 +241,10 @@ nav a:hover{
 
 }
 .tier2img1, .tier2img2, .tier2img3{
+	max-height: 20vh;
 	width: auto;
 	height: 20vh;
 	max-width: 18%;
-	max-height: 110vh;
 	border: solid #CF232D 5px;
 }
 .tier2img1{
@@ -286,10 +286,10 @@ nav a:hover{
 
 }
 .tier3img1, .tier3img3{
+	max-height: 20vh;
 	width: auto;
 	height: 20vh;
 	max-width: 18%;
-	max-height: 110vh;
 	border: solid #CF232D 5px;
 }
 .tier3img1{
