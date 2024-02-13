@@ -87,7 +87,7 @@ h1 span{
 }
 h1 span::before {
 	content: "";
-	right: -8px;
+	left: -8px;
 	top: 55;
 	position: absolute;
 	height: 50px;
