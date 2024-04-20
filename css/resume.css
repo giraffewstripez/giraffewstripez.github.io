@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'Comfortaa', sans-serif;
+	overflow: hidden;
+}
+body{
+	background-color: #F47D84;
+	padding: 0;
+}
+
+.userprf{
+	padding-top: 15px;
+	text-align: right;
+	margin-right: 20px;
+}
+.prefReset{
+	margin-top: -2%;
+	position: absolute;
+	padding: 4px 4px;
+	background-color: transparent;
+	border: 2px solid #CF232D;
+	color: #fff;
+	border-radius: 5px;
+}
+.prefReset:hover{
+	font-weight: bold;
+	background-color: #CF232D;
+}
+.userprf a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+}
+.userprf a:hover{
+	color: #4C2424;
+	text-shadow: #CF232D 1px 0 10px;
+}
+
+.header{
+	padding-top: 10px;
+	width: 100%;
+}
+nav{
+	width: 100%;
+	padding: 23px;
+	text-align: center;
+}
+nav a{
+	text-decoration: none;
+	text-justify: auto;
+	margin: 20px 30px;
+	color: #fff;
+	font-weight: bolder;
+	background-color: transparent;
+	font-size: 23px;
+}
+nav a:hover{
+	text-decoration: underline #CF232D 6px;
+	text-underline-offset: 6px;
+	color: #4C2424;
+	font-size: 22px;
+	text-shadow: 2px 2px 8px #CF232D;
+}
+
+
+
+iframe{
+	margin-top: 0;
+	width: 50%;
+	height: 80vh;
+	padding: 0;
+	position: absolute;
+	margin-left: 27%;
+}
+
+
+
+
+.resclick{
+	visibility: hidden;
+}
+
+
+
+/*Scroll Bar*/
+
+::-webkit-scrollbar{
+	width: 12px;
+}
+::-webkit-scrollbar-track{
+	background: #EBBABD;
+}
+::-webkit-scrollbar-thumb{
+	background: white;
+	border-radius: 10px;
+	opacity: 80%;
+}
+
+.navsym{
+	visibility: hidden;
+}
+.arrowsym{
+	visibility: hidden;
+}
+
+
+
+
+
+
+/*Responsive*/
+
+@media screen and (max-width: 900px){
+
+	nav a{
+		font-size: 15px;
+	}
+	.mypdf{
+		display: none;
+	}
+	.resclick{
+		position: absolute;
+		max-width: 900px;
+		width: 60%;
+		margin-top: -145%;
+		margin-left: 19%;
+		background-color: transparent;
+	}
+	nav{
+		margin: 0;
+		visibility: hidden;
+		max-width: 100%;
+		position: relative;
+		margin-top: 10%;
+	}
+	nav a{
+		padding-top: 3%;
+		padding-bottom: 3%;
+		padding-right: 35%;
+		margin-left: 2%;
+		display: flow;
+		padding-left: 70%;
+		border: solid black 1px;
+	}
+	nav a:hover{
+		font-size: 12px;
+	}
+
+
+	.navsym{
+		visibility: visible;
+		position: absolute;
+		margin-top: -218%;
+		margin-left: 70%;
+		background-color: transparent;
+	}
+	.navsym:hover{
+		background-color: rgba(237, 132, 172, 0.2);
+	}
+
+	.arrowsym{
+		visibility: hidden;
+		background-color: transparent;
+		width: 100px;
+		height: 15vh;
+		margin-top: -230%;
+		position: absolute;
+		margin-left: 70%;
+	}
+	.arrowsym:hover{
+		background-color: rgba(237, 132, 172, 0.2);
+	}
+
+}
