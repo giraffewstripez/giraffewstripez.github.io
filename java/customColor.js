@@ -178,11 +178,14 @@ function applyStoredInput() {
         let table = document.querySelector(table);
         table.style.background = colorChange;
     }
-     if (document.querySelector(".phrase")){        
+    if (document.querySelector(".phrase")){        
         let phrase = document.querySelector(".phrase");
         phrase.style.color = accentcolor;
     }
-
+    if (document.querySelector(".statement")){        
+        let statement = document.querySelector(".statement");
+        statement.style.color = accentcolor;
+    }
 
 
 
