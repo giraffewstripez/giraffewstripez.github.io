@@ -174,10 +174,6 @@ function applyStoredInput() {
         let container2 = document.querySelector(".contact-right");
         container2.style.background = colorChange;
     }
-    if (document.querySelector(table)){        
-        let table = document.querySelector(table);
-        table.style.background = colorChange;
-    }
     if (document.querySelector(".phrase")){        
         let phrase = document.querySelector(".phrase");
         phrase.style.color = accentcolor;
