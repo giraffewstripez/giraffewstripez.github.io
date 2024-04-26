@@ -26,19 +26,24 @@ function applyStoredInput() {
     let accentcolor = localStorage.getItem('accentcolor');
     let textcolor = localStorage.getItem('textcolor');
 
-
-
-                     // Background color
-
+    // Background color
     document.body.style.backgroundColor = colorChange;
 
+   
 
-                        // Accent Color 
 
+
+    // Accent color
     let accentElements = document.querySelectorAll('.accent-color');
     accentElements.forEach(function(element) {
         element.style.color = accentcolor;
     });
+
+ 
+
+
+
+
 
 
                     // Conditionals
@@ -48,6 +53,14 @@ function applyStoredInput() {
     if (document.querySelector(".disclaimer")) {
         let detail = document.querySelector(".disclaimer");
         detail.style.color = accentcolor;
+    }
+    if (document.querySelector(".p1")){        
+        let text2 = document.querySelector(".p1");
+        text2.style.color = accentcolor;
+    }
+    if (document.querySelector(".greeting")){
+        let text1 = document.querySelector(".greeting");
+        text1.style.color = accentcolor;
     }
     if (document.getElementById("firstL")) {
         let detail1 = document.getElementById("firstL");
@@ -153,54 +166,56 @@ function applyStoredInput() {
         } 
     }
 
+    if (document.querySelector(".contact-left")){
+        let container1 = document.querySelector(".contact-left");
+        container1.style.backgroundColor = accentcolor;
+    }   
+    if (document.querySelector(".contact-right")){        
+        let container2 = document.querySelector(".contact-right");
+        container2.style.background = colorChange;
+    }
+    if (document.querySelector(table)){        
+        let table = document.querySelector(table);
+        table.style.background = colorChange;
+    }
+     if (document.querySelector(".phrase")){        
+        let phrase = document.querySelector(".phrase");
+        phrase.style.color = accentcolor;
+    }
 
 
-                    // Preference button
-
-    let prefer = document.querySelector(".prefReset");
-    prefer.style.border = "2px solid " + accentcolor;
-    
-    prefer.addEventListener("mouseover", function (event) {
-        prefer.style.backgroundColor = accentcolor;
-        prefer.style.color = colorChange;
-    });
-
-    prefer.addEventListener("mouseout", function (event) {
-        prefer.style.backgroundColor = "";
-        prefer.style.color = "";
-    });
 
 
 
-                    // Navigation links
 
-    let navLinks = document.querySelectorAll("nav a");
-    navLinks.forEach(function (navdetail) {
-        navdetail.addEventListener("mouseover", function (event) {
+
+
+
+    // Navigation links
+    document.querySelectorAll('nav a').forEach(navdetail => {
+        navdetail.addEventListener('mouseover', event => {
             navdetail.style.color = accentcolor;
-            navdetail.style.textDecoration = "underline 6px " + accentcolor;
-            navdetail.style.textShadow = "2px 2px 8px " + accentcolor;
+            navdetail.style.textDecoration = `underline 6px ${accentcolor}`;
+            navdetail.style.textShadow = `2px 2px 8px ${accentcolor}`;
         });
 
-        navdetail.addEventListener("mouseout", function (event) {
-            if (colorChange === "white") {
-                navdetail.style.color = textcolor;
-                navdetail.style.textDecoration = "";
-                navdetail.style.textShadow = "";
-            } else {
-                navdetail.style.color = "";
-                navdetail.style.textDecoration = "";
-                navdetail.style.textShadow = "";
-            }
+        navdetail.addEventListener('mouseout', event => {
+            navdetail.style.color = (colorChange === 'white') ? textcolor : '';
+            navdetail.style.textDecoration = '';
+            navdetail.style.textShadow = '';
         });
     });
 
 
 
 
-                    // Text color
 
 
+
+
+
+
+    // Text color
     let text1 = document.querySelector(".greeting");
     let text2 = document.querySelector(".p1");
     text1.style.color = textcolor;
@@ -221,18 +236,28 @@ function applyStoredInput() {
     });
 }
 
-//Reset functionality
 
-function resetPreferences(){
+
+
+
+
+
+
+
+
+
+
+
+
+// Reset preferences
+function resetPreferences() {
     localStorage.removeItem('colorChange');
     localStorage.removeItem('accentcolor');
     localStorage.removeItem('textcolor');
-    alert("Refresh page to reset display preferences.");
+    alert('Refresh page to reset display preferences.');
 }
 
+// Initialization
 storeUserInput();
-
 applyStoredInput();
-
-console.log("Applying stored input...");
-
+console.log('Applying stored input...');
